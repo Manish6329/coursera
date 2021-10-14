@@ -157,4 +157,4 @@ for table_number, table in enumerate(soup.find_all('table', "wikitable plainrowh
 
 
 df=pd.DataFrame(launch_dict)
-print(df)
+df.to_csv('spacex_webscraped.csv',index=False)

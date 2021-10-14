@@ -136,7 +136,7 @@ mean = data_falcon9['PayloadMass'].mean()
 data_falcon9['PayloadMass'] = data_falcon9['PayloadMass'].fillna(mean)
 data_falcon9.isnull().sum()
 
-# data_falcon9.to_csv('dataset_part_1.csv', index=False)
+data_falcon9.to_csv('dataset_part_1.csv', index=False)
 
 
 
